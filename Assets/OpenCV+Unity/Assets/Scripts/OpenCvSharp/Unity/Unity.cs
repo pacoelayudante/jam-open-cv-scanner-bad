@@ -19,7 +19,7 @@ namespace OpenCvSharp {
 		/// <param name="rotationAngle">Rotation angle, must be exactly in { 0, 90, 180, 270 } set</param>
 		/// <returns>cv::Mat pointer</returns>
 		[DllImport(NativeMethods.DllExtern, CallingConvention = CallingConvention.Cdecl)]
-		private static extern IntPtr utils_texture_to_mat(IntPtr pixels32, int w, int h, [MarshalAs(UnmanagedType.I1)] bool flipVetically, [MarshalAs(UnmanagedType.I1)] bool flipHorizontally, int rotationAngle);
+		public static extern IntPtr utils_texture_to_mat(IntPtr pixels32, int w, int h, [MarshalAs(UnmanagedType.I1)] bool flipVetically, [MarshalAs(UnmanagedType.I1)] bool flipHorizontally, int rotationAngle);
 
 		/// <summary>
 		/// Converts cv::Mat to the pixels buffer

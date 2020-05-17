@@ -9477,6 +9477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 0}
+  modoSeguro: 1
   meterWebCamAcaAlArrancar: {fileID: 0}
   indiceCamInicial: 0
   procesarCada: 5
@@ -9556,6 +9557,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: {fileID: 0}
   textura: {fileID: 2800000, guid: e720d91662f1d02409ee0628c3c584de, type: 3}
+  modoSeguro: 1
+  autoApagar: 1
 --- !u!1 &1829264459
 GameObject:
   m_ObjectHideFlags: 0
@@ -10204,6 +10207,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: CosoQueLevanta
       objectReference: {fileID: 0}
+    - target: {fileID: 3832459805996781806, guid: 04d3f57c14eb954449783ce490c90bc4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854693499457253318, guid: 04d3f57c14eb954449783ce490c90bc4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4227224937043191015, guid: 04d3f57c14eb954449783ce490c90bc4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10369,6 +10382,16 @@ PrefabInstance:
     - target: {fileID: 1164925437, guid: 04d3f57c14eb954449783ce490c90bc4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982051889902057342, guid: 04d3f57c14eb954449783ce490c90bc4,
+        type: 3}
+      propertyPath: input
+      value: 
+      objectReference: {fileID: 854693499457253318}
+    - target: {fileID: 4982051889902057342, guid: 04d3f57c14eb954449783ce490c90bc4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d3f57c14eb954449783ce490c90bc4, type: 3}
